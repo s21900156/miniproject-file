@@ -5,9 +5,8 @@
 #include "manager.h"
 
 int main(void){
-#ifdef DEBUG
     printf("***DEBUG: %s %s %s %d\n", __DATE__,__TIME__,__FILE__,__LINE__);
-#endif
+
     Product plist[20];
     int index =0;
     int count = 0, menu;
