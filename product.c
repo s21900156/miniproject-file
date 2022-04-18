@@ -17,7 +17,6 @@ int createProduct(Product *p){
     scanf("%d",&p->deliverynum);
     return 1;
 }
-
 int selectMenu(){
     int menu;
     printf("\n*** 쇼핑몰 ***\n");
@@ -71,7 +70,7 @@ int deleteProduct(Product *p){
     p->price=-1;
     return 1;
 }
-void searchProduct(Product *p,int count){
+void searchProduct(Product *p){
     char name[30];
     int num =0;
     printf("검색할 과일이름은? ");
@@ -85,7 +84,7 @@ void searchProduct(Product *p,int count){
     if(num==0) printf("=> 검색된 데이터 없음\n");
 }
 
-void searchPrice(Product *p,int count){
+void searchPrice(Product *p){
     int searchnum=0;
     int num =0;
     printf("검색할 가격은? ");
@@ -99,7 +98,7 @@ void searchPrice(Product *p,int count){
     if(num==0) printf("=> 검색된 데이터 없음\n");
 }
 
-void searchDeliverynum(Product *p,int count){
+void searchDeliverynum(Product *p){
     int num =0;
     int search;
     printf("검색할 배송방법은?(1:새벽배송/2:택배배송) ");
