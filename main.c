@@ -15,7 +15,7 @@ int main(void){
     index=count;
     while (1){
         menu = selectMenu();
-        if (menu == 0) break;
+        
         if (menu == 1){
             if(count==0) printf("정보가 없습니다\n");
             else listProduct(plist,index);
