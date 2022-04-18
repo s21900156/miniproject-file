@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include "product.h"
-#include "manager.h"
 
 int main(void){
 #ifdef DEBUG
